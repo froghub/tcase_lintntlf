@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визитка</title>
+    <script src="https://cdn.jsdelivr.net/npm/imask@7.6.1/dist/imask.min.js"></script>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+
+<div class="container">
+    <div class="info-section">
+        <h1>О себе</h1>
+        <p>Создаю современные, быстрые и полностью адаптивные веб-приложения. Специализируюсь на бессерверных
+            архитектурах и автоматизации бэкенд-процессов.</p>
+
+        <div class="stats">
+            <div class="stat-item">
+                <strong>Фронтенд</strong>
+                <div class="tech-list">
+                    <span class="tech-tag">JS</span>
+                    <span class="tech-tag">TS</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">Vue 3</span>
+                    <span class="tech-tag">Vue Router</span>
+                    <span class="tech-tag">Vite</span>
+                    <span class="tech-tag">Vitest</span>
+                </div>
+            </div>
+
+            <div class="stat-item">
+                <strong>Бэкенд</strong>
+                <div class="tech-list">
+                    <span class="tech-tag">PHP (7/8)</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Redis</span>
+                    <span class="tech-tag">Laravel</span>
+                    <span class="tech-tag">PHPUnit/Pest</span>
+                    <span class="tech-tag">Pint</span>
+                    <span class="tech-tag">PHPStan</span>
+                </div>
+            </div>
+
+            <div class="stat-item">
+                <strong>Инструменты</strong>
+                <div class="tech-list">
+                    <span class="tech-tag">Git</span>
+                    <span class="tech-tag">GitHub Actions</span>
+                    <span class="tech-tag">Jenkins</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Jira</span>
+                </div>
+            </div>
+
+            <div class="stat-item">
+                <strong>Опыт работы</strong>
+                <span>Более 6 лет коммерческой разработки</span>
+            </div>
+
+            <div class="stat-item">
+                <strong>Проекты</strong>
+                <ul class="project-list">
+                    <li class="project-item">
+                        <strong class="project-title">1. Коммерческая TMS + система мониторинга транспорта</strong>
+                        Большое количество смежного инструментария: панель администрирования, биллинг, дашборды
+                        мониторинга отдельных элементов системы, интеграции с внешними системами. Работал над проектом
+                        долго, участвовал практически во всех этапах.
+                    </li>
+                    <li class="project-item">
+                        <strong class="project-title">2. Государственная Медицинская Информационная система</strong>
+                        Работал над интеграциями, модификацией и улучшением рабочих форм.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="form-section">
+        <h2>Связаться со мной</h2>
+        <form id="contactForm">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" placeholder="Иван Петров" required>
+
+            <label for="phone">Номер телефона</label>
+            <input type="text" id="phone" placeholder="+7 (___) ___-__-__" required>
+
+            <label for="email">Ваш Email</label>
+            <input type="email" id="email" placeholder="example@mail.ru" required>
+
+            <label for="message">Комментарий</label>
+            <textarea id="message" placeholder="Опишите вашу задачу или задайте вопрос..." required></textarea>
+
+            <button type="submit" id="submitBtn">Отправить запрос</button>
+        </form>
+    </div>
+</div>
+
+<script src="./api.js"></script>
+
+</body>
+</html>
